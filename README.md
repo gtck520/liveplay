@@ -1,20 +1,32 @@
-#﻿1、安装python
-#2、 pip install --user pipx
-#3、pipx ensurepath
-#4、pipx install edge-tts
-#5、下载mpv
-https://sourceforge.net/projects/mpv-player-windows/files/64bit/mpv-x86_64-20240317-git-3afcaeb.7z/download
 
-使用 文字转语音
-edge-tts --text "Hello, world!" --write-media hello.mp3 --write-subtitles hello.vtt
+```
+1. Install Python
+2. Install `pipx`:
+   ```
+   pip install --user pipx
+   ```
+3. Ensure `pipx` is in the PATH:
+   ```
+   pipx ensurepath
+   ```
+4. Install `edge-tts`:
+   ```
+   pipx install edge-tts
+   ```
+5. Download `mpv` from this [link](https://sourceforge.net/projects/mpv-player-windows/files/64bit/mpv-x86_64-20240317-git-3afcaeb.7z/download)
 
-直接读
-edge-playback --text "Hello, world!"
+Usage:
+- To convert text to speech and save as media and subtitles files:
+   ```
+   edge-tts --text "Hello, world!" --write-media hello.mp3 --write-subtitles hello.vtt
+   ```
+- To directly play the speech:
+   ```
+   edge-playback --text "Hello, world!"
+   ```
 
-
-
---voice zh-CN-YunxiNeural   这个男音是抖音常用的
-
---voice zh-CN-XiaoyiNeural  甜美女
-
---voice zh-CN-XiaoxiaoNeural  正常女# liveplay
+Available voices:
+- `zh-CN-YunxiNeural`: Masculine voice commonly used in Douyin (TikTok)
+- `zh-CN-XiaoyiNeural`: Sweet female voice
+- `zh-CN-XiaoxiaoNeural`: Normal female voice
+```
