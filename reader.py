@@ -2,7 +2,7 @@ import redis
 import subprocess
 
 
-r = redis.StrictRedis(host='106.55.181.114', port=16379, db=0,password='dffg12dghj')
+r = redis.StrictRedis(host='106.55.181.114', port=16379, db=0,password='123456')
     
 while True:
     key, message = r.blpop('text_queue')
