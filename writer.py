@@ -1,7 +1,8 @@
 import redis
 
 # 连接到Redis服务器
-r = redis.StrictRedis(host='106.55.181.114', port=16379, db=0,password='123456')
+r = redis.StrictRedis(host='106.55.181.114', port=16379, db=0,password='dffg12dghj')
+# r.delete('text_queue')
 print(r.ping())
 # 输入要朗读的文本
 text = input("请输入要朗读的文本：")
